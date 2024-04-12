@@ -12,7 +12,7 @@ ADD mods /usr/mc/mods
 
 ADD https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.15.9/1.0.0/server/jar /usr/mc/server.jar
 RUN echo eula=true > /usr/mc/eula.txt
-COPY server.properties /usr/mc/server.properties
+ADD server.properties /usr/mc/server.properties
 
 WORKDIR /usr/mc
 
